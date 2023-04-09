@@ -1,0 +1,48 @@
+<!doctype html>
+<html>
+
+<head>
+    <title>Chess</title>
+    <link rel="stylesheet" href="lib/chessboard-0.3.0.min.css">
+    <link rel="stylesheet" href="/default.css" /> 
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/MaterialDesign-Webfont/7.2.96/css/materialdesignicons.min.css" integrity="sha512-LX0YV/MWBEn2dwXCYgQHrpa9HJkwB+S+bnBpifSOTO1No27TqNMKYoAn6ff2FBh03THAzAiiCwQ+aPX+/Qt/Ow==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+    <div id="lobby">
+        <input type="text" id="room"><br><br>
+        <input type="text" id="name"><br><br>
+        <input type="submit" value="Join" onclick="joinRoom();"></button>
+    </div>
+
+    <div id="loading">
+        <h1 id="gameProgress">WAITING FOR MORE PLAYERS</h1>
+        <div id="playerList"></div>
+    </div>
+
+    <div id="game">
+        <h1 id="team">Your Team Is White</h1>
+        <div id='gameBoard'></div>
+    </div>
+
+    <div id="alert-wrapper">
+
+        <div class="alert alert-error">
+            <div class="icon__wrapper">
+            <span class="mdi mdi-alert-outline"></span>
+            </div>
+            <p>That game is full! Try joining a different one!</p>
+            <span class="mdi mdi-open-in-new open"></span>
+            <span class="mdi mdi-close close"></span>
+        </div>
+
+    </div>
+
+    <script src="/socket.io/socket.io.js"></script>
+    <script src="lib/chess.min.js"></script>
+    <script src="lib/chessboard-0.3.0.min.js"></script>
+    <script src="lib/jquery-1.11.1.js"></script>
+    <script src="/default.js"></script>
+</body>
+
+</html>
