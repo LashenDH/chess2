@@ -4,7 +4,8 @@
   "description": "Chess made by Lashen",
   "main": "app.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\""
+    "test": "echo \"Error: no test specified\"",
+    "start": "node default.js"
   },
   "author": "Lashen",
   "license": "ISC",
