@@ -1,0 +1,4 @@
+{
+    "appService.defaultWebAppToDeploy": "/subscriptions/894591a4-ee9c-486a-803c-b6c50a517d00/resourceGroups/lashen-chess_group/providers/Microsoft.Web/sites/lashen-chess",
+    "appService.deploySubpath": "."
+}
